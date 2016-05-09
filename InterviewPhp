@@ -1,0 +1,83 @@
+[SƯU TẦM A E MÀ ĐI PV CỨ ĐOẠN NÀY PHANG RA]
+Nhà tuyển dụng thường hỏi gì khi phỏng vấn lập trình viên PHP
+
+1. Lập trình hướng đối tượng (OOP) là gì ? Tại sao lại sử dụng OOP mà ko phải lập trình khác? Điểm mạnh của nó là gì ?
+
+a. OOP là phương pháp lập trình qui tất cả về 1 đối tượng, khi cần chỉ việc lấy ra sử dụng.
+b.php là phần mềm mã mở được tất cả người sử dụng trên thế giới phát triển, mỗi người phát triễn 1 hướng, nên OOP được sử dụng để tập hợp tất cả qui về 1 mối, Điểm mạnh của OOP là kế thừa, cho phép sử dụng lại những gì đã có trước đó và phát triển thêm dựa trên những cái đã có sẵn.
+
+2. Làm thế nào để truy cập trong phương thức và thuộc tính?
+
+dùng từ khóa $this trỏ tới phương thức hoặc thuộc tính cần truy cập.
+
+3. Thế nào là thuộc tính ? Phương thức ?
+
+Thuộc tính là những biến được khởi tạo có kèm theo cơ chế. Phương thức là những hàm được khởi tạo có kèm theo cơ chế
+
+4. Làm thế nào để sử dụng class?
+
+Khởi tạo 1 đối tượng thể hiện của lớp đó.
+
+5. Có các cơ chế nào ? Nói rỏ các cơ chế. Private khác protected chổ nào ?
+
+Có 3 cơ chế: Public, private, protected.
+Public: cho phép truy cập và sử dụng ở phạm vi trong class và ngoài class.
+Protected: cho phép truy cập cái phương thức và thuộc tính trong class, có hỗ trợ sự kế thừa
+Private: Giống private, nhưng không cho phép kế thừa.
+
+6. Hàm khởi tạo là gì ? Tại sao phải dùng hàm khởi tạo? Đối lập với hàm khởi tạo là gì ? __destruct đc gọi khi nào ?
+
+Hàm khởi tạo __construct() là hàm được gọi khi khởi tạo một đối tượng.
+Dùng hàm khởi tạo để khởi tạo những phương thức và thuộc tính cần thiết khi 1 đối tượng được khởi tạo.
+Đối lập với hàm khởi tạo là hàm hủy khởi tạo __destruct(), Hàm hủy khởi tạo được gọi khi kết thúc một kịch bản.
+
+7. Thế nào là kế thừa? Việc kế thừa diễn ra theo hướng nào ? Kế thừa đc bao nhiêu lớp ?
+
+Kế thừa là việc sử dụng lại những gì đã có từ lớp cha, ngoại trừ những cơ chế được bảo vệ. việc kế thừa diễn ra theo 1 chiều, 1 lớp con chỉ có thể kế thừa từ 1 lớp cha, 1 lớp cha có thể có nhiều lớp con kế thừa.
+
+8. Ghi đè là gì ? Tác hại của việc ghi đè là gì ? Làm gì để khắc phục việc ghi đè ? Tầm vực của parent là bao nhiêu cấp ? Làm sao để chống việc ghi đè?
+
+- Ghi đè là việc lớp cha và lớp con trùng tên phương thức.
+- Tác hại của việc ghi đè là làm vỡ cấu trúc ban đâu mà lớp cha đã gây dựng nên.
+- Để khắc phục ghi đè ta dùng từ khóa parent:: bên trong phượng thức bị ghi đè.
+- Tầm vực của parent chỉ được 1 cấp. Để chống việc ghi đè ta dùng từ khóa final đặt trước tên phương thức bị ghi đè.
+
+9. Final là gì ? diễn giải nó như thế nào ? Nêu ra các chức năng của final.
+
+- Final là qui ước phương thức cuối cùng hoặc 1 class cuối cùng. Final dùng để chống việc ghi đè hoàn toàn và chống sự kế thừa
+
+10. Nếu sử dụng phương thức private có chống đc việc ghi đè ko ?
+
+- Không vì cơ chế private chỉ chống sự kế thừa.
+
+11. Thuộc tính tĩnh là gì? Tác dụng là gì ? Khác thuộc tính thường chổ nào?
+
+Làm sao để truy xuất thuộc tính tĩnh ? Thuộc tính tĩnh khác hằng chổ nào ?
+- là thuộc tính được qui ước từ khóa static đứng trước tên thuộc tính. Tác dụng là thường dùng để huy động hoặc lặp lại hành động lặp lại nhiều lần nên đỡ tốn tài nguyên.
+- Thuộc tính tĩnh khác thuộc tính thường ở chỗ không cần khởi tạo đối tượng vẫn có thể truy xuất được.
+- Để truy xuất thuộc tính tĩnh dùng từ khóa self::tenthuoctinh
+- Thuộc tính tĩnh khác hằng ở chỗ là giá trị có thể thay đổi, trong khi đó hằng là có giá trị cố định.
+
+12. Clone là gì ? Sử dụng clone ntn ?
+- Clone là nhân bản 1 đối tượng đã có sẵn( không phải tạo đối tượng mới)
+- Sử dụng clone khi ta không muốn nó làm thay đổi giá trị của lớp ban đầu
+
+13. Lớp trừu tượng là gì ? dùng adstract để làm gì ? Nhược điểm của abstract là gì? Có cách nào để khắc phục nhược điểm đó ko ?
+- Lớp trừu tượng là lớp chứa các phương thức trừu tượng, các lớp sử dụng lớp trừu tượng phải thưc thi các phương thức trừu tượng của lớp trừu tượng đó.
+- Dùng Abstract để quản lý dự án(vừa và nhỏ).
+- Nhược đểm là mang tính đơn hình(chỉ được kế thừa từ 1 lớp). Để khắc phục ta dùng giao diện(interface).
+
+14. Interface là gì ? Công dụng của nó ?
+- Interface là giao diện, mang tính đa hình cho phép sự dụng 1 hay nhiều giao diện
+- Công dụng là để quản lý dứ án có qui mô lớn.
+
+15. Phân biệt sự khác và giống nhau của interface và abstract là gì ?
+- Giống nhau là để dùng để quản lý dự án
+- Khác nhau: Abstract mang tính đơn hình, chỉ kế thừa được 1 lớp(bản chất là 1 lớp). còn Interface mang tính đa hình, có thể sử dụng 1 hay nhiều giao diện
+
+16. 1 lớp có thể sử dụng abstract và interface cùng lúc ko ? - được
+
+17. 1 lớp có thể sử dụng 2 giao diện có cùng tên hàm ko? - Không
+
+18. Lazy loading techology là gì ?
+- là công nghê tự động nạp 1 file khi khởi tạo 1 đối tượng(tên file trùng tên lớp

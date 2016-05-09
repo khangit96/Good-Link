@@ -1,0 +1,42 @@
+**How to Declare Variables:
+//example
+$My_Variable_Name = 'This is a Test'
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+**Joining variables
+-When you want to join multiple variables together, use the and sign (&), example shown below.
+//example
+$word1 = 'Your '
+$word2 = 'friend'
+$phrase = $word1 & $word2
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+***A Single If
+//example1
+If $Var = 0 Then
+    MsgBox(4096,"", "The variable content was.")
+EndIf
+//example2
+$string = 'This is a test'
+$string2 = 'This is not a test'
+If $string == $string2 Then
+  MsgBox(4096,"","Matched!")
+Else
+  MsgBox(4096,"", "The strings did not match!")
+EndIf
+//example3
+$string = 'Some string 1'
+$string2 = 'Some string 2'
+
+$string3 = 'How to do If Statements'
+$string4 = 'How to do If Statements'
+
+If $string == $string2 Then
+  MsgBox(4096,"","Matched!")
+Else
+  If $string == $string2 Then
+    MsgBox(4096,"", "The nested If was true")
+  EndIf
+EndIf
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+***Autoit Loops
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------

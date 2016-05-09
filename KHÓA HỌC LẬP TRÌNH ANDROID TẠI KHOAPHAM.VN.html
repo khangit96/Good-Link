@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0051)http://khoapham.vn/KhoaPhamTraining/android/snipet/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN</title>
+<meta name="description" content="Tổng hợp các hàm trong khóa học lập trình Android cơ bản, biên soạn tại Trung Tâm Khoa Phạm - Khóa học lập trình Android chất lượng số một TPHCM">
+<meta name="keywords" content="lap trinh android, lập trìn android, khóa học android ,khoa hoc android, khoa hoc android tot nhat tphcm,lap trinh php, lap trinh ios, lap trinh Android, lap trinh swift, thiet ke web, do hoa web, khoa hoc php, khoa hoc joomla, khoa hoc wordpresss">
+<style>
+.box{color:#0C0; font-weight:bold; text-transform:uppercase}
+.noibat{color:red}
+</style>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">CÀI ĐẶT PHẦN MỀM ĐỂ LẬP TRÌNH ANDROID</td>
+  </tr>
+</tbody></table>
+
+
+<p>Bước 1: Cài JDK (là bộ Java) <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
+<p>Bước 2: Cài máy ảo GenyMotion: <a href="https://www.genymotion.com/">https://www.genymotion.com/</a></p>
+<p>Bước 3: Cài Android Studio: <a href="https://developer.android.com/sdk/index.html">https://developer.android.com/sdk/index.html</a></p>
+<p><iframe width="640" height="360" src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/wvo59B3hPhM.html" frameborder="0" allowfullscreen=""></iframe>&nbsp;</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">mảng - arraylist</td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/arraylist.png" width="695" height="593"></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">imageview</td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/imageview.png" width="800"></p>
+<p>Lưu ý: Hình load từ internet từ Android 4. trở lên bắt buộc phải dùng ASYNC (Bài Async ở dưới)</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">bắt tọa độ khi chạm tay vào màn hình</td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/toa-do-cham-vao-image.png" width="715" height="323"></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">animation</td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/animation.png" width="707" height="444"></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">timer</td>
+  </tr>
+</tbody></table>
+<p><span class="noibat">new CountDownTimer(5000, 100) {</span> <br>
+public void <span class="noibat">onTick</span>(long millisUntilFinished) {<br>
+txtvSo.setText("còn lại: " + millisUntilFinished / 100);<br>
+}</p>
+<p> public void <span class="noibat">onFinish</span>() {<br>
+  txtvSo.setText("done!");<br>
+  }<br>
+<span class="noibat">}</span>.start();</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">di chuyển giữa các màn hình </td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/2activity.png" width="666" height="448"></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">truyền tham số giữa các màn hình</td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/truyenthamso.png" width="781" height="277"></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">ĐỌC TEXT/HTML TỪ INTERNET</td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/xmldomparser-1.png" alt="" width="957" height="556"></p>
+<p>- Truyền tham số đến URL (Xử lý mã utf-8)</p>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/utf8.png" alt="" width="736" height="109"></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">alert dialog</td>
+  </tr>
+</tbody></table>
+<p>Button btnNut; <br>
+  <br>
+  @Override <br>
+  <strong>protected</strong> <strong>void</strong> onCreate(Bundle  savedInstanceState) { <br>
+  <strong>super</strong>.onCreate(savedInstanceState); <br>
+  setContentView(R.layout.<strong><em>activity_main</em></strong>); <br>
+  btnNut = (Button)findViewById(R.id.<strong><em>btnNut</em></strong>); <br>
+  btnNut.setOnClickListener(<strong>new</strong> View.OnClickListener() { <br>
+  <br>
+  @Override <br>
+  <strong>public</strong> <strong>void</strong> onClick(View v) { <br>
+  // <strong>TODO</strong> Auto-generated method stub <br>
+  <span class="noibat">showAlert();</span><br>
+  } <br>
+  }); <br>
+  } <br>
+  <br>
+  <strong>public</strong> <strong>void</strong> <span class="noibat">showAlert(){ </span><br>
+  AlertDialog.Builder  builder = <strong>new</strong> Builder(<strong>this</strong>); <br>
+  builder.setPositiveButton("ON", <strong>new</strong> OnClickListener() { <br>
+  <br>
+  @Override <br>
+  <strong>public</strong> <strong>void</strong> onClick(DialogInterface dialog, <strong>int</strong> which) { <br>
+  // <strong>TODO</strong> Auto-generated method stub <br>
+  <br>
+  } <br>
+  }); <br>
+  builder.setTitle("Tieu  de"); <br>
+  builder.setMessage("Noi dung  ne"); <br>
+  <br>
+  AlertDialog  ad = builder.create(); <br>
+  ad.show(); <br>
+<span class="noibat">}</span></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">list view cơ bản</td>
+  </tr>
+</tbody></table>
+<p class="noibat">B1: Keo listview vào</p>
+<div>&lt;ListView <br>
+  android:id=<em>"@+id/listviewMonHoc"</em><br>
+  android:layout_width=<em>"match_parent"</em><br>
+  android:layout_height=<em>"wrap_content"</em><br>
+  android:layout_centerHorizontal=<em>"true"</em><br>
+  android:layout_centerVertical=<em>"true"</em> &gt;<br>
+&lt;/ListView&gt; </div>
+<p class="noibat">B2: viet code:</p>
+<div>ListView monhocLV =  (ListView)findViewById(R.id.<strong><em>listviewMonHoc</em></strong>); <br>
+  String[] monhoc = <strong>new</strong> String[]{ <br>
+  "iOS cơ bản", <br>
+  "iOS nâng  cao", <br>
+  "PHP &amp;  MySQL", <br>
+  "Joomla", <br>
+  "Wordpress" <br>
+  }; <br>
+  ArrayAdapter&lt;String&gt;  adapter = <strong>new</strong> ArrayAdapter&lt;String&gt;(<strong>this</strong>, android.R.layout.<strong><em>simple_list_item_1</em></strong>, monhoc); <br>
+monhocLV.setAdapter(adapter); </div>
+<p class="noibat">**** Bắt sự kiện chọn 1 item trong listview</p>
+<div>monhocLV.setOnItemClickListener(<strong>new</strong> OnItemClickListener() {
+  <p>@Override <br>
+    <strong>public</strong> <strong>void</strong> onItemClick(AdapterView&lt;?&gt; parent, View view,<strong> int</strong> position, <strong>long</strong> id) { <br>
+    // <strong>TODO</strong> Auto-generated method stub <br>
+    Toast.<em>makeText</em>(getApplicationContext(),  monhoc[position], Toast.<strong><em>LENGTH_SHORT</em></strong>).show(); <br>
+    } <br>
+    });</p>
+</div>
+<p>"Mảng monhoc phải thêm <strong class="noibat">final</strong>"</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">list view nâng cao - custom adapter</td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/CustomAdapter.png" width="1096" height="538"></p>
+<p><a href="http://khoapham.vn/KhoaPhamTraining/android/Custom.txt" target="new">http://khoapham.vn/KhoaPhamTraining/android/Custom.txt</a></p>
+<p>&nbsp;</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">TOAST</td>
+  </tr>
+</tbody></table>
+<p><span class="noibat">- Toast cơ bản:</span><br>
+  Toast toast = Toast.<em>makeText</em>(MainActivity.<strong>this</strong>, "Hello  World", Toast.<strong><em>LENGTH_SHORT</em></strong>);<br>
+  toast.setGravity(Gravity.<strong><em>TOP</em></strong>, 0, 0); <br>
+toast.show();</p>
+<p><span class="noibat">- Chèn View vào bên trong Toast:</span><br>
+  LayoutInflater inflater = getLayoutInflater();<br>
+View layoutQC = inflater.inflate(R.layout.thongbao, (ViewGroup)findViewById(R.id.layoutThongbao));<br>
+Toast t = new Toast(MainActivity.this);<br>
+t.setView(layoutQC);<br>
+t.show();  <br>
+<br>
+</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">Ép kiểu dữ liệu</td>
+  </tr>
+</tbody></table>
+<p><span class="noibat">Ép số:</span> Integer.<em>parseInt</em>("1987")</p>
+<p><span class="noibat">Ép chuỗi</span>: String.<em><u>valueOf</u></em>(10)<br>
+</p>
+<p>&nbsp; </p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" width="50" height="73"></td>
+    <td class="box">Play Mp3 From  Internet + local</td>
+  </tr>
+</tbody></table>
+<p><span class="noibat">- From local:</span><br>
+  MediaPlayer song = MediaPlayer.<em>create</em>(MainActivity.<strong>this</strong>, R.raw.<strong><em>nuocmat</em></strong>); <br>
+song.start();<br>
+<strong><br>
+Stop:</strong> <br>
+onPause(); <br>
+song.pause();</p>
+<p><span class="noibat">- From Internet:</span><br>
+  </p><pre>  public void PlayNhacMp3(String url){
+        //url = "http://khoapham.vn/KhoaPhamTraining/laptrinhios/EmCuaNgayHomQua.mp3";
+        MediaPlayer mediaPlayer = new MediaPlayer();
+        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+        try {
+            mediaPlayer.setDataSource(url);
+            mediaPlayer.prepareAsync();
+            mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(MediaPlayer mp) {
+                    mp.start();
+                }
+            });
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+  </pre><p></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">checkbox</td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/checkbox.png" width="537" height="236"></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">save + read file txt</td>
+  </tr>
+</tbody></table>
+<p class="noibat">- Save file txt</p>
+<p>FileOutputStream fos =  openFileOutput("<strong>khoapham.txt</strong>", Context.<strong><em>MODE_PRIVATE</em></strong>); <br>
+fos.write(noidung.getBytes());<br>
+fos.close() </p>
+<p class="noibat">- Read file txt</p>
+<p>FileInputStream fis =  openFileInput("<strong>khoapham.txt</strong>"); <br>
+  BufferedReader  br = <strong>new</strong> BufferedReader(<strong>new</strong> InputStreamReader(<strong>new</strong> DataInputStream(fis))); <br>
+  String  line = ""; <br>
+  <strong>while</strong>( (line = br.readLine()) != <strong>null</strong> ){ <br>
+  txtvNoiDung.append(line); <br>
+txtvNoiDung.append("\n"); <br>
+}</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">check 2 view chạm nhau</td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/collision-android.png" width="712" height="147"></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">kích thước của màn hình thiết bị</td>
+  </tr>
+</tbody></table>
+<p>Display display =  ((WindowManager) getSystemService(<strong><em>WINDOW_SERVICE</em></strong>)).getDefaultDisplay(); <br>
+  <strong>int</strong> width = display.<u>getWidth</u><u>()</u>; <br>
+  <strong>int</strong> height = display.<u>getHeight</u><u>()</u>; <br>
+<strong>int</strong> ori  = display.<u>getOrientation</u><u>()</u>;<br>
+<br>
+</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">webview: url internet &amp; local html</td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/webview.png" width="528" height="140"></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">shared preference</td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/sharedPreference.png" width="622" height="177"></p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">sqlite</td>
+  </tr>
+</tbody></table>
+<p class="noibat">- Tạo class Database</p>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/sqlite1.png" width="828" height="641" alt=""></p>
+<p class="noibat">- Sử dụng class Database</p>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/sqlite2.png" width="743" height="350"></p>
+<p>&nbsp;</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">ASYNC</td>
+  </tr>
+</tbody></table>
+<p>&nbsp;</p>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/async_android.png" width="983" height="681"></p>
+<p>&nbsp;</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">XMLDOMParser</td>
+  </tr>
+</tbody></table>
+<p><strong><u>B1: Tạo class XMLDOMParser</u></strong></p>
+<ol>
+  <li><a href="http://khoapham.vn/KhoaPhamTraining/android/XMLDOMParser.rtf" target="new">http://khoapham.vn/KhoaPhamTraining/android/XMLDOMParser.rtf</a></li>
+</ol>
+<p><strong><u>B2: MainActivity</u></strong></p>
+<ol>
+  <li><strong>Tạo hàm getXmlFromUrl(String  urlString)</strong><br>
+    <a href="http://khoapham.vn/KhoaPhamTraining/android/ReadStringFromURL.txt" target="new">http://khoapham.vn/KhoaPhamTraining/android/ReadStringFromURL.txt</a><br>
+    <br>
+  </li>
+<li><strong>Tạo Asysnc:</strong><br>
+  <img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/xmldomparser-1.png" width="957" height="556"></li>
+  <li><strong>OnCreate</strong><br>
+  <img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/xmldomparser-2.png" alt="" width="957" height="147">  </li>
+</ol>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">Kích hoạt Camera chụp hình </td>
+  </tr>
+</tbody></table>
+<p><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android-camera.png" width="100%"></p>
+<p>&nbsp;</p>
+<p>Code:</p>
+<p><br>
+</p><div style="border:solid 1px #0033CC">Intent cameraIntent = <strong>new </strong> Intent(android.provider.MediaStore.<strong><em>ACTION_IMAGE_CAPTURE</em></strong>);<br>
+  startActivityForResult(cameraIntent, <strong><em>CAMERA_REQUEST</em></strong>);</div><br>
+  <br>
+  <br>
+<div style="border:solid 1px #0033CC"><strong>protected void </strong>onActivityResult(<strong>int </strong>requestCode, <strong>int </strong>resultCode, Intent data)  {<br>
+  <strong>if </strong>(requestCode == <strong><em>CAMERA_REQUEST </em></strong>&amp;&amp;  resultCode == <strong><em>RESULT_OK</em></strong>) {<br>
+  Bitmap photo = (Bitmap)  data.getExtras().get(<strong>"data"</strong>);<br>
+  <strong>img </strong>= (ImageView)findViewById(R.id.<strong><em>imageViewHinh</em></strong>);<br>
+  <strong>img</strong>.setImageBitmap(photo);<br>
+  }<br>
+}<p></p></div>
+  <p>&nbsp;</p>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+      <td class="box">TEXT TO SPEED</td>
+    </tr>
+  </tbody></table>
+<pre>TextToSpeech t1;<br>@Override<br>protected void onCreate(Bundle savedInstanceState) {<br>    super.onCreate(savedInstanceState);<br>    setContentView(R.layout.activity_main);<br><br>    t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {<br>        @Override<br>        public void onInit(int status) {<br>            if(status != TextToSpeech.ERROR) {<br>                t1.setLanguage(Locale.ENGLISH);<br>                t1.speak("I've been lonely with you", TextToSpeech.QUEUE_FLUSH, null)<br>            }<br>        }<br>    });<br>}</pre>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+      <td class="box">SEND POST ĐẾN WEB SERVER</td>
+    </tr>
+  </tbody></table>
+  <p>Note: Phải sử dụng Asysnc</p>
+  <pre>  private String makePostRequest() {
+    HttpClient httpClient = new DefaultHttpClient();
+    
+    // URL của trang web nhận request
+    HttpPost httpPost = new HttpPost("http://khoapham.vn/post.php");
+    
+    // Các tham số truyền
+    List<namevaluepair> nameValuePair = new ArrayList<namevaluepair>(2);
+    nameValuePair.add(new BasicNameValuePair("so1", "111"));
+    nameValuePair.add(new BasicNameValuePair("so2", "222"));
+    
+    //Encoding POST data
+    try {
+        httpPost.setEntity(new UrlEncodedFormEntity(nameValuePair));
+    } catch (UnsupportedEncodingException e) {
+        e.printStackTrace();
+    }
+
+    String kq = "";
+    try {
+        HttpResponse response = httpClient.execute(httpPost);
+        HttpEntity entity = response.getEntity();
+        kq = EntityUtils.toString(entity);
+    } catch (ClientProtocolException e) {
+        e.printStackTrace();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+
+    return kq;
+}
+
+</namevaluepair></namevaluepair></pre>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+      <td class="box">ĐỌC NỘI DUNG CỦA MỘT URL INTERNET</td>
+    </tr>
+  </tbody></table>
+  <pre>&nbsp;  </pre>
+  
+  
+<pre>private static String docNoiDung_Tu_URL(String theUrl)<br>{<br>    StringBuilder content = new StringBuilder();<br><br>    // many of these calls can throw exceptions, so i've just<br>    // wrapped them all in one try/catch statement.<br>    try<br>    {<br>        // create a url object<br>        URL url = new URL(theUrl);<br><br>        // create a urlconnection object<br>        URLConnection urlConnection = url.openConnection();<br><br>        // wrap the urlconnection in a bufferedreader<br>        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));<br><br>        String line;<br><br>        // read from the urlconnection via the bufferedreader<br>        while ((line = bufferedReader.readLine()) != null)<br>        {<br>            content.append(line + "\n");<br>        }<br>        bufferedReader.close();<br>    }<br>    catch(Exception e)<br>    {<br>        e.printStackTrace();<br>    }<br>    return content.toString();<br>}
+
+
+</pre>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">IMAGEVIEW TO BYTE ARRAY</td>
+  </tr>
+</tbody></table> 
+
+<pre>public byte[] ImageView_To_Byte(){
+        //Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.chomuc);
+        BitmapDrawable drawable = (BitmapDrawable) imgvHinhSP.getDrawable();
+        Bitmap bmp = drawable.getBitmap();
+
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.PNG, 100, stream);
+        byte[] byteArray = stream.toByteArray();
+        return byteArray;
+}
+</pre> 
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">BYTE ARRAY TO IMAGEVIEW</td>
+  </tr>
+</tbody></table> 
+<pre>Bitmap bitmap = BitmapFactory.decodeByteArray(BYTE[], 0, BYTE[].length);
+imgv.setImageBitmap(bitmap);
+
+</pre>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">CONFIG PARSE CONNECT</td>
+  </tr>
+</tbody></table>
+<br>
+<div>- Add class MyApplication</div>
+<pre>public class MyApplication extends Application {
+    @Override
+    public void onCreate(){
+        super.onCreate();
+        Parse.initialize(this, "xxx", "yyy");
+    }
+}
+</pre>
+<div>- Trong Manifest</div>
+<pre>android:name="MyApplication"
+</pre>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">PLAY MP3 FROM BYTE[]</td>
+  </tr>
+</tbody></table>
+<pre>private void playMp3FromByte(byte[] mp3SoundByteArray) {
+        try {
+
+            File tempMp3 = File.createTempFile("kurchina", "mp3", getCacheDir());
+            tempMp3.deleteOnExit();
+            FileOutputStream fos = new FileOutputStream(tempMp3);
+            fos.write(mp3SoundByteArray);
+            fos.close();
+
+            MediaPlayer mediaPlayer = new MediaPlayer();
+
+            FileInputStream fis = new FileInputStream(tempMp3);
+            mediaPlayer.setDataSource(fis.getFD());
+
+            mediaPlayer.prepare();
+            mediaPlayer.start();
+        } catch (IOException ex) {
+            String s = ex.toString();
+            ex.printStackTrace();
+        }
+}
+</pre>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">CONVERT FILE LOCAL TO BYTE[]</td>
+  </tr>
+</tbody></table>
+<pre>public byte[] FileLocal_To_Byte(String path){
+        File file = new File(path);
+        int size = (int) file.length();
+        byte[] bytes = new byte[size];
+        try {
+            BufferedInputStream buf = new BufferedInputStream(new FileInputStream(file));
+            buf.read(bytes, 0, bytes.length);
+            buf.close();
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return bytes;
+}
+
+// path
+outputFile = Environment.getExternalStorageDirectory().
+                getAbsolutePath() + "/filename.3gpp";
+
+filename.3gpp nằm trong res
+</pre>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">Play file MP4 từ Internet</td>
+  </tr>
+</tbody></table>
+<pre>Uri uri = Uri.parse("http://khoapham.vn/download/amthambenem.mp4"); 
+mVideoView.setMediaController(new android.widget.MediaController(getApplicationContext()));
+mVideoView.setVideoURI(uri); 
+mVideoView.requestFocus();
+mVideoView.start();
+
+Lưu ý:
+1 - Nhớ xin Permission Internet
+2 - mVideoView: là đối tượng VideoView
+3 - Dừng phim lại: mVideoView.stopPlayback();
+</pre>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="50"><img src="./KHÓA HỌC LẬP TRÌNH ANDROID TẠI KHOAPHAM.VN_files/android.png" alt="" width="50" height="73"></td>
+    <td class="box">VIẾT ỨNG DỤNG GHI ÂM</td>
+  </tr>
+</tbody></table>
+
+<p style="color:red; font-weight:bold">Bước 1: Lấy Permissions</p>
+
+<pre>&lt; uses-permission android:name="android.permission.RECORD_AUDIO" /&gt;
+&lt; uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/&gt;
+</pre>
+
+<p style="color:red; font-weight:bold">Bước 2: MainActivity:</p>
+
+
+<p style="color:blue; font-weight:bold">1.	Biến toàn cục:</p>
+
+<pre>private MediaRecorder myRecorder;
+private MediaPlayer myPlayer;
+private String outputFile = null;
+</pre>
+<p style="color:blue; font-weight:bold">2.	Hàm OnCreate:</p>
+
+<pre>outputFile = Environment.getExternalStorageDirectory().getAbsolutePath() + "/khoaphamvn.3gpp";
+myRecorder = new MediaRecorder();
+myRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+myRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+myRecorder.setAudioEncoder(MediaRecorder.OutputFormat.AMR_NB);
+myRecorder.setOutputFile(outputFile);
+</pre>
+
+<p style="color:red; font-weight:bold">Bước 3: Các hàm xử lý:</p>
+
+<p style="color:blue; font-weight:bold">1.	Bắt đầu ghi âm</p>
+
+<pre>public void start(View view){
+    try {
+        myRecorder.prepare();
+        myRecorder.start();
+    } catch (IllegalStateException e) {
+        e.printStackTrace();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    Toast.makeText(getApplicationContext(), "Start recording...",
+            Toast.LENGTH_SHORT).show();
+}
+</pre>
+
+
+<p style="color:blue; font-weight:bold">2.	Dừng ghi âm</p>
+
+<pre>public void stop(View view){
+    try {
+        myRecorder.stop();
+        myRecorder.release();
+        myRecorder  = null;
+
+        Toast.makeText(getApplicationContext(), "Stop recording...",
+                Toast.LENGTH_SHORT).show();
+    } catch (IllegalStateException e) {
+        e.printStackTrace();
+    } catch (RuntimeException e) {
+        e.printStackTrace();
+    }
+}
+</pre>
+
+
+<p style="color:blue; font-weight:bold">3.	Play âm thanh đã thu</p>
+
+<pre>public void play(View view) {
+    try{
+        myPlayer = new MediaPlayer();
+        myPlayer.setDataSource(outputFile);
+        myPlayer.prepare();
+        myPlayer.start();
+
+        Toast.makeText(getApplicationContext(), "Start play the recording...",Toast.LENGTH_SHORT).show();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+</pre>
+
+
+<p style="color:blue; font-weight:bold">4.	Dừng Play:</p>
+
+<pre>public void stopPlay(View view) {
+    try {
+        if (myPlayer != null) {
+            myPlayer.stop();
+            myPlayer.release();
+            myPlayer = null;
+
+            Toast.makeText(getApplicationContext(), "Stop playing the recording...", Toast.LENGTH_SHORT).show();
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+
+</pre>
+  
+
+
+</body><div></div></html>

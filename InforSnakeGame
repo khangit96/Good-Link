@@ -1,0 +1,22 @@
+-Những cái mới ở trong snake game
++thay đổi giao diện con rắn,giao diện background ,giao diện thực phẩm lớn,nhỏ
++thêm đối tượng thực phẩm nhỏ,lớn
++thực phẩm lớn sẽ tự động biến mất sau 10s và 
++khi ăn thực phẩm lớn đủ 3 lần mà nếu ăn thêm thực phẩm nhỏ thì thực phẩm lớn sẽ ko mất nếu như nó ko đk ăn cũng như thòi gian chưa đến 10s
++khi ăn thực phẩm lớn sau 10s thì phải ăn đủ 3 thực phẩm nhỏ mới hiện lên 1 thực phẩm lớn nữa
++có time,level,score
++có âm thanh khi ăn thực phẩm lớn,nhỏ,âm thanh chết,âm thanh đụng vào tường
++hiện thông số như score,level,time khi game over
++rắn lớn lên khi ăn mồi
++chức năng pause and resum khi play game
++âm thanh khi pause game
++khi mở game lần đầu sẽ hiện menu lựa chọn và có âm thanh background
++Khi gameover thì sẽ hiện ra button chơi lại vs main menu
++khi nhấn ESC thì sẽ hiện ra nút Resume và Main Menu
++Disable close button,bắt buộc người dùng phải thoát bằng Menu trong Game
++Lưu điểm số vào file khi game over và hiện thị điểm số cao nhất vào phần Hight Score
++khi nhấn esc key để resume thì cũng sẽ tiến hành kiểm tra và lưu điểm cao vào file
++đang chơi game mà nhấn esc key để dừng game và thoát thì ra ngoài main menu sẽ có button lựa chọn để tiếp tục chơi game.
++đang chơi game mà nhấn esc key để dừng game và thoát ra trò chơi thì lần sau vào lại game  sẽ có button lựa chọn để tiếp tục chơi game.
++còn nếu game over thì sẽ không có button continue khi thoát game hoặt ra ngoài main menu
++khi chọn continue thì sẽ tiếp tục chơi game với các thông số cũ của lần cuối chơi game như điểm số,vị trí con rắn, độ dài rắn,hướng di chuyển rắn và thời gian
